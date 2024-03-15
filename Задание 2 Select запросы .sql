@@ -11,7 +11,8 @@ WHERE duration >= 210;
 -- 3. Названия сборников, вышедших в период с 2018 по 2020 год включительно
 SELECT collection_tittle 
 FROM collection 
-WHERE year_collection >= 2018 AND year_collection <= 2020;
+WHERE year_collection 
+BETWEEN 2018 AND 2020;
 
 -- 4. Исполнители, чьё имя состоит из одного слова.
 SELECT nick_name 
